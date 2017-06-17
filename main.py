@@ -6,7 +6,6 @@ app.config['DEBUG'] = True      # displays runtime errors in the browser, too
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://build-a-blog:blog@localhost:3306/build-a-blog'
 app.config['SQLALCHEMY_ECHO'] = True
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-app.secret_key = "Onn7Opjufsyi"
 
 db = SQLAlchemy(app)
 
