@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{title}}</title>
+      <style>
+            form {
+              background-color: #eee;
+              padding: 20px;
+              margin: 0 auto;
+              width: 540px;
+              font: 16px sans-serif;
+              border-radius: 10px;
+          }
+          textarea {
+              margin: 10px 0;
+              width: 540px;
+              height: 120px;
+          }
+          hr{
+            color: grey;
+          }
+          .title{
+            font-weight: bold;
+          }
+      </style>
+  </head>
+  <body>
+    <a href = "/newpost">New Post</a> | <a href = "/">Home</a>
+    {%block content%}
+    {%endblock%}
+  </body>
+</html

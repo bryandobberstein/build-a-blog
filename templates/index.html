@@ -1,0 +1,15 @@
+{%extends "base.html"%}
+{%block content%}
+  {%if posts|length == 0%}
+    <h3>Under Construction</h3>
+  {%else%}
+    {%for post in posts%}
+      <hr>
+      <span class = "title">
+        <a href = "posted?id={{post.id}}">{{post.title}}</a>
+      </span>
+      <p>{{post.body}}</p>
+      <hr>
+    {%endfor%}
+  {%endif%}
+{%endblock%}

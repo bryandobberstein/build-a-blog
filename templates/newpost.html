@@ -1,0 +1,10 @@
+{%extends "base.html"%}
+{%block content%}
+  <form method = "post">
+    <label for = "title">Title</label>
+    <input type = "text" name = "title" id = "title" value = {{titleerror}}><br>
+    <label for = "body">Body</label>
+    <textarea name = "body" id = "body">{{bodyerror}}</textarea>
+    <input type = "submit">
+  </form>
+{%endblock%}
