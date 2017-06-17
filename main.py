@@ -33,13 +33,13 @@ def newpost():
         body = request.form["body"]
         blank = False
         if title == "":
-            titleerror = "Please include a title"
+            titleerror = "ERROR:Please_include_a_title"
             blank = True
         else:
             titleerror = ""
 
         if body == "":
-            bodyerror = "Please include text in your post"
+            bodyerror = "ERROR:Please include text in your post"
             blank = True
         else:
             bodyerror = ""

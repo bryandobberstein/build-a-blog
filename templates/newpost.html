@@ -2,9 +2,11 @@
 {%block content%}
   <form method = "post">
     <label for = "title">Title</label>
-    <input type = "text" name = "title" id = "title" value = {{titleerror}}><br>
+    <input type = "text" name = "title" id = "title"><br>
+    <span class = "error">{{titleerror}}</span><br>
     <label for = "body">Body</label>
-    <textarea name = "body" id = "body">{{bodyerror}}</textarea>
+    <textarea name = "body" id = "body"></textarea>
+    <span class = "error">{{bodyerror}}</span>
     <input type = "submit">
   </form>
 {%endblock%}
