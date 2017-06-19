@@ -20,7 +20,7 @@ class Blog(db.Model):
 # display index page with all posts in db
 @app.route("/")
 def index():
-    posts = Blog.query.all()
+    posts = Blog.query.order_by(Blog.id.desc()).all()
     return render_template("index.html", posts = posts)
 # display newpost page
 @app.route("/newpost", methods = ["GET", "POST"])
